@@ -8,7 +8,7 @@ let LinkStyle='flex items-center gap-2 font-light px-3 py-2 hover:bg-neutral-700
 
 export default function Sidebar(){
     return(
-        <div className="bg-neutral-900 w-60 h-screen flex flex-col p-3 text-white">
+        <div className="bg-neutral-900 md:w-60 w-10 h-screen flex flex-col p-3 text-white">
              
                  <div className="flex items-center gap-2 px-1 py-2">
                       <FcBullish fontSize={24}/>
