@@ -7,11 +7,11 @@ import { useNavigate } from "react-router-dom";
 export default function Navbar(){
     let navigate = useNavigate()
     return(
-        <div className="w-full h-14 bg-neutral-200 flex items-center border-b border-gray-200 justify-between">
+        <div className="md:w-full sm:w-36 w-24 h-14 bg-neutral-200 flex items-center border-b border-gray-200 justify-between">
              <div className="mx-4 relative">
                 
                 <HiOutlineSearch fontSize={20} className="text-gray-400 absolute left-2 top-2"/>
-                <input placeholder="search..." className="py-2 w-72 rounded-sm border-1 border-gray-400 text-sm pl-8 focus:outline-none active:bg-slate-50"/>
+                <input placeholder="search..." className="py-2 md:w-72 sm:36 w-24 rounded-sm border-1 border-gray-400 text-sm pl-8 focus:outline-none active:bg-slate-50"/>
              </div>
              <div className="flex items-center gap-2 mr-2">
              <Popover className="relative">
@@ -35,7 +35,7 @@ export default function Navbar(){
 								leaveTo="opacity-0 translate-y-1"
 							>
 								<Popover.Panel className="absolute right-0 z-10 mt-2.5 transform w-80">
-									<div className="bg-white rounded-sm shadow-md ring-1 ring-black ring-opacity-5 px-2 py-2.5">
+									<div className="bg-white rounded-sm shadow-md ring-1 ring-black ring-opacity-5 px-2 ">
 										<strong className="text-gray-700 font-medium">Messages</strong>
 										<div className="mt-2 py-1 text-sm">This is messages panel.</div>
 									</div>
